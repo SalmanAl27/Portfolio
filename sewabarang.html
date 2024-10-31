@@ -38,6 +38,8 @@
         
         <!--style.css-->
         <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="styled.css">
+
         
         <!--responsive.css-->
         <link rel="stylesheet" href="assets/css/responsive.css">
@@ -78,8 +80,6 @@
 			            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
 			                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
 			                <li class=" smooth-menu active"></li>
-			                    <li class="smooth-menu"><a href="#portfolio">portfolio</a></li>
-			                    <li class="smooth-menu"><a href="#contact">contact</a></li>
 			                </ul><!--/.nav -->
 			            </div><!-- /.navbar-collapse -->
 			        </div><!--/.container-->
@@ -92,46 +92,92 @@
 		</header><!-- /.top-area-->
 		<!-- top-area End -->
 	
-		<!--welcome-hero start -->
-		<section id="welcome-hero" class="welcome-hero">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 text-center">
-						<div class="header-text">
-							<h2>hi <span>,</span> i am <br> Muhammad Salman <br> Al Farisi <span>.</span>   </h2>
-							<p>web developer</p>
-							<a href="assets/download/Muhammad Salman Al Farisi-resume-compressed.pdf" download>download resume</a>
-						</div><!--/.header-text-->
-					</div><!--/.col-->
-				</div><!-- /.row-->
-			</div><!-- /.container-->
+				
+                            <!-- Container for the image gallery -->
+                        <div class="container">
 
-		</section><!--/.welcome-hero-->
-		<!--welcome-hero end -->
+                            <!-- Full-width images with number text -->
+                            <div class="mySlides">
+                            <div class="numbertext">1 / 6</div>
+                                <img src="assets/images/portfolio/sewabarang/1.png" style="width:100%">
+                            </div>
+                        
+                            <div class="mySlides">
+                            <div class="numbertext">2 / 6</div>
+                                <img src="assets/images/portfolio/sewabarang/2.png" style="width:100%">
+                            </div>
+                        
+                            <div class="mySlides">
+                            <div class="numbertext">3 / 6</div>
+                                <img src="assets/images/portfolio/sewabarang/3.png" style="width:100%">
+                            </div>
+                        
+                            <div class="mySlides">
+                            <div class="numbertext">4 / 6</div>
+                                <img src="assets/images/portfolio/sewabarang/4.png" style="width:100%">
+                            </div>
+                        
+                            <div class="mySlides">
+                            <div class="numbertext">5 / 6</div>
+                                <img src="assets/images/portfolio/sewabarang/5.png" style="width:100%">
+                            </div>
+                        
+                            <div class="mySlides">
+                            <div class="numbertext">6 / 6</div>
+                                <img src="assets/images/portfolio/sewabarang/6.png" style="width:100%">
+                            </div>
+                        
+                            <!-- Next and previous buttons -->
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        
+                            <!-- Image text -->
+                            <div class="caption-container">
+                            <p id="caption"></p>
+                            </div>
+                        
+                            <!-- Thumbnail images -->
+                            <div class="row">
+                            <div class="column">
+                                <img class="demo cursor" src="assets/images/portfolio/sewabarang/1.png" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="assets/images/portfolio/sewabarang/2.png" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="assets/images/portfolio/sewabarang/3.png" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="assets/images/portfolio/sewabarang/4.png" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="assets/images/portfolio/sewabarang/5.png" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="assets/images/portfolio/sewabarang/6.png" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+                            </div>
+                            </div>
+                        </div>
+
+						
+	
 
 		<!--about start -->
 		<section id="about" class="about">
 			<div class="section-heading text-center">
-				<h2>about me</h2>
+				<h2>Explanation</h2>
 			</div>
 			<div class="container">
 				<div class="about-content">
 					<div class="row">
-						<div class="col-sm-6">
+						<div class="col-sm">
 							<div class="single-about-txt">
 								<h3>
-									Hi, I’m Muhammad Salman Al Farisi, a dedicated Web Developer with a background in Informatics Engineering
+									Hi, this is application Sewabarang.
 								</h3>
 								<p>
-									I specialize in building efficient, user-friendly applications and have experience working with frameworks like Laravel, PHP, and TailwindCSS. My passion lies in creating seamless, responsive websites and applications that prioritize user experience and functionality.
-
-I’ve worked on various projects, from a complaint management system to a digital canteen ordering platform, each tailored to solve specific user needs and streamline workflows. I’m excited to bring my skills to new, innovative projects and contribute to building the digital solutions of tomorrow.
+                                    "Sewabarang is an application I developed using Laravel, Filament, PHP, TailwindCSS, and JavaScript. This platform enables users to seamlessly rent items, offering an intuitive interface for item listings, reservation management, and transaction tracking, making the rental process efficient and user-friendly."
 								</p>
-							</div>
-						</div>
-						<div class="col-sm-offset-1 col-sm-5">
-							<div class="single-about-img">
-								<img src="assets/images/about/bromo.jpg" alt="bromo">
 							</div>
 						</div>
 					</div>
@@ -140,114 +186,7 @@ I’ve worked on various projects, from a complaint management system to a digit
 		</section><!--/.about-->
 		<!--about end -->
 
-		<!--portfolio start -->
-		<section id="portfolio" class="portfolio">
-			<div class="portfolio-details">
-				<div class="section-heading text-center">
-					<h2>portfolio</h2>
-				</div>
-				<div class="container">
-					<div class="portfolio-content">
-						<div class="isotope">
-							<div class="row">
-
-								<div class="col-sm-4">
-									<div class="item">
-										<img src="assets/images/portfolio/sewabarang.png" alt="portfolio image"/>
-										<div class="isotope-overlay">
-											<a href="sewabarang.html">
-												Sewa Barang
-											</a>
-										</div><!-- /.isotope-overlay -->
-									</div><!-- /.item -->
-									<div class="item">
-										<!-- <img src="assets/images/portfolio/p2.jpg" alt="portfolio image"/> -->
-										<div class="isotope-overlay">
-											<a href="#">
-												ui/ux design
-											</a>
-										</div><!-- /.isotope-overlay -->
-									</div><!-- /.item -->
-								</div><!-- /.col -->
-
-								<div class="col-sm-4">
-									<div class="item">
-										<!-- <img src="assets/images/portfolio/p2.jpg" alt="portfolio image"/> -->
-										<div class="isotope-overlay">
-											<a href="#">
-												web design
-											</a>
-										</div><!-- /.isotope-overlay -->
-									</div><!-- /.item -->
-								</div><!-- /.col -->
-
-								<div class="col-sm-4">
-									<div class="item">
-										<!-- <img src="assets/images/portfolio/p4.jpg" alt="portfolio image"/> -->
-										<div class="isotope-overlay">
-											<a href="#">
-												web development
-											</a>
-										</div><!-- /.isotope-overlay -->
-									</div><!-- /.item -->
-									<div class="item">
-										<!-- <img src="assets/images/portfolio/p5.jpg" alt="portfolio image"/> -->
-										<div class="isotope-overlay">
-											<a href="#">
-												web development
-											</a>
-										</div><!-- /.isotope-overlay -->
-									</div><!-- /.item -->
-								</div><!-- /.col -->
-							</div><!-- /.row -->
-						</div><!--/.isotope-->
-					</div><!--/.gallery-content-->
-				</div><!--/.container-->
 			</div><!--/.portfolio-details-->
-
-		</section><!--/.portfolio-->
-		<!--portfolio end -->
-
-		<!--contact start -->
-		<section id="contact" class="contact">
-			<div class="section-heading text-center">
-				<h2>contact me</h2>
-			</div>
-			<div class="container">
-				<div class="contact-content">
-					<div class="row">
-						<div class="col-md-offset-1 col-md-5 col-sm-6 ">
-							<div class="single-contact-box">
-								<div class="contact-adress">
-									<div class="contact-add-head">
-										<h3>Muhammad Salman Al Farisi</h3>
-										<p>Web Developer</p>
-									</div>
-									<div class="contact-add-info">
-										<div class="single-contact-add-info">
-											<h3>phone</h3>
-											<p>081806540100</p>
-										</div>
-										<div class="single-contact-add-info">
-											<h3>email</h3>
-											<p>salmanalfariz27@gmail.com</p>
-										</div>
-									</div>
-								</div><!--/.contact-adress-->
-								<div class="hm-foot-icon">
-									<ul>
-										<li><a href="https://wa.me/+6281806540100"><i class="fa fa-whatsapp"></i></a></li><!--/li-->
-										<li><a href="https://www.instagram.com/msalmnalfarisi/"><i class="fa fa-instagram"></i></a></li><!--/li-->
-									</ul><!--/ul-->
-								</div><!--/.hm-foot-icon-->
-							</div><!--/.single-contact-box-->
-						</div><!--/.col-->
-					</div><!--/.row-->
-				</div><!--/.contact-content-->
-			</div><!--/.container-->
-
-		</section><!--/.contact-->
-		<!--contact end -->
 
 		<!--footer-copyright start-->
 		<footer id="footer-copyright" class="footer-copyright">
@@ -304,6 +243,7 @@ I’ve worked on various projects, from a complaint management system to a digit
         
         <!--Custom JS-->
         <script src="assets/js/custom.js"></script>
+        <script src="jsu.js"></script>
         
     </body>
 	
